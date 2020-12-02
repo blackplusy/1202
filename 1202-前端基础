@@ -163,23 +163,39 @@ tel:18028768679
 							cookie
 							客户端信息
 						请求体数据
-
 						响应头数据
 							状态码
 							当前时间
 							服务器软件版本
 						响应体数据
-
-
-
-
-
-
-
-
-
+					4>数据修改(篡改)【fiddler】
+						断点调试(bpu)
+						伪响应
+						bpu http://ecshop.test1.shopex123.com
+						bpu
+						伪请求
+						bpu http://ecshop.test1.shopex123.com/user.php
+						bpu
 			2.域名、IP   ecshop.test1.shopex123.com
+				完全合格域名(FQDN)
+				DNS(域名解析服务器)
+				正向解析(域名--IP)
+					1>ping 目标网站
+						win+r--cmd--ping www.baidu.com
+					2>nslookup 目标网站
+						win+r--cmd--nslookup www.baidu.com
+				反向解析(IP--域名)
+					nslookup IP
+					广域网中很少使用
 			3.端口      :80  80端口在浏览器中不显示
+				区分应用层进程的标识
+				常见端口
+				apache/nginx/iis   80端口
+				tomcat           8080端口
+				mysql            3306端口
+				oracle           1521端口
+				win下查看端口的命令
+					win+r--cmd--netstat -an 
 			4.虚拟目录   goods 项目代码所在文件夹
 			5.访问的文件 category.php
 			6.访问文件所使用的参数 ?id=286
