@@ -1,0 +1,68 @@
+QQ、微信:914338492
+tel:18028768679
+
+
+1.常见的数据库
+	a.关系型数据库
+		informix IBM+HP 军、政、运、银
+		db2      IBM    军、政、运、银
+		oracle   甲骨文  中大型企业
+		mysql    甲骨文  互联网企业
+		sqlserver 微软   传统类型企业
+	b.非关系型数据库
+		mongodb  分布式存储，大数据，爬虫
+		redis    sina，消息队列，缓存
+		cassandra facebook
+2.mongodb的下载和安装
+	a.mongodb的下载
+		1>操作系统类型
+			unix
+			linux
+			windows
+		2>操作系统位数
+			x86  i386 i686 i586    32位
+			x64  x86_64            64位
+		3>软件版本
+			推荐最新版本
+		4>软件包类型
+			msi  安装包
+			zip  压缩包
+	b.安装和部署
+		1>解压压缩包
+		2>设置环境变量
+			计算机--属性--高级--环境变量--系统变量--Path中添加mongodb的bin的路径
+			;F:\mongodb-win32-x86_64-2012plus-4.2.8\bin
+			确定X3
+3.mongodb的服务
+	a.mongodb的服务
+		mongo       mongodb的客户端服务
+		mongod      mongodb的服务端服务
+	b.启动mongodb主服务
+		启动命令(命令提示符【win+r--cmd】)
+		mongod --dbpath f:\data
+		mongod --dbpath f:\data --logpath f:\data\mongo.log
+		--dbpath 数据存放的路径(文件夹)
+		--logpath 日志文件存放的位置(文件)
+	c.检查服务
+		mongodb的主服务  mongod
+		检查服务
+			win+r--cmd--tasklist | find "mongod"
+			tasklist  查看当前运行的所有进程
+			|         管道，前面的输出作为后面的输入
+			find      搜索
+			如果出现mongod说明已经正常启动
+		mongodb的端口    27017
+			win+r--cmd--netstat -an | find "27017"
+			netstat -an   查看当前系统中开放的所有端口
+			如果出现127.0.0.1:27017说明端口正常
+		补充
+			0.0.0.0    任意IP地址
+			127.0.0.1  localhost 本地IP
+
+
+
+
+
+
+
+
